@@ -8,20 +8,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class EnterpriseController {
 
     /**
-     * Handle the root (/) endpoint and return a start page @return (start.html)
+     * Handle the root (/) endpoint and return a start page @return (dashboard.html)
      *
      */
     @RequestMapping("/")
     public String index(Model model){
-        return ("start");
+        return ("dashboard");
     }
 
     /*
      *Handles Page Mapping for Ui
      */
-    @GetMapping("/start")
-    public String startPage() {
-        return "start";
+    @GetMapping("/dashboard")
+    public String dashboardPage() {
+        return "dashboard";
     }
     @GetMapping("/addTransaction")
     public String addTransactionPage() {
