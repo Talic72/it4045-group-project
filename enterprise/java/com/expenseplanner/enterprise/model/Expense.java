@@ -9,7 +9,7 @@ public class Expense {
     private java.time.LocalDate date;
     private String category;
     private String description;
-git
+
     public Long getId() {
         return id;
     }
